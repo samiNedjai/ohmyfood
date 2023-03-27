@@ -9,65 +9,79 @@
     <title>Oh my foood</title>
 </head>
 <body>
-    <header>
-        <h1>ohmyfood</h1>
+    <header class="logo">
+        <a href="index.html">
+            <img src="assets/images/logo/ohmyfood.png" alt="">
+        </a>
     </header>
     <main>
         <!-- localisation -->
         <div class="location">
-            <div class="location_icon"> 
+            <div class="location__icon"> 
                 <i class="fa-solid fa-location-dot"></i>
             </div>
-           <div class="location_city">
+           <div class="location__city">
                 <p>Paris, Belleville</p>
             </div>
         </div>
             <!-- section explorer -->
         <section class="explorer">
-            <div class="explorer_container">
-                <h2 class="explorer_title">Réserver le menu qui vous convient</h2>
-                <p class="explorer_text">Décovrir des restaurants d'exception, séléctionés par nos soins</p>
+            <div class="explorer__container">
+                <h2 class="explorer__title">Réserver le menu qui vous convient</h2>
+                <p class="explorer__text">Décovrir des restaurants d'exception, séléctionés par nos soins</p>
                 <button>Explorer nos restaurants</button>
                
             </div>
         </section>
             <!-- section Fonctionnement  -->
-        <section class="process_container">
+        <section class="process__container">
+            <h2 class="process__title">Fonctionnements</h2>
             <div class="process">
-                <h2 class="process_title">Fonctionnement</h2>
-                <div class="process_steps">
-                    <div class="process_step">
-                        <div class="process_number">1</div>
-                        <div class="process_icon">
+                <div class="process__steps">
+                        <div class="process__number">1</div>
+                        <div class="process__icon">
                             <i class="fa-solid fa-mobile-screen-button fa-lg"></i>
+                        <p class="process__text">Choisissez un restaurant</p>
                         </div>
-                        <p class="process_text">Choisissez un restaurant</p>
-                    </div>
                 </div>
-                <div class="process_steps">
-                    <div class="process_step">
-                        <div class="process_number">2</div>
-                        <div class="process_icon">
+                <div class="process__steps">
+                        <div class="process__number">2</div>
+                        <div class="process__icon">
                             <i class="fa-solid fa-list-ul fa-lg"></i>
-
+                            <p class="process__text">Composez votre menu</p>
                         </div>
-                        <p class="process_text">Composez votre menu</p>
-                    </div>
                 </div>
-                <div class="process_steps">
-                    <div class="process_step">
-                        <div class="process_number">3</div>
-                        <div class="process_icon">
+                <div class="process__steps">
+                        <div class="process__number">3</div>
+                        <div class="process__icon">
                             <i class="fa-sharp fa-solid fa-store fa-lg"></i>
+                            <p class="process__text">Dégustez au restaurant</p>
                         </div>
-                        <p class="process_text">Dégustez au restaurant</p>
-                    </div>
                 </div>
             </div>
-
-
         </section>
-       
+                        <!--Restaurants  -->
+        <section class="restaurants">
+            <h2>Restaurants</h2>
+            <div class="restaurants__cards">
+                <a href="#">
+                    <div class="restaurants__card">
+                        <div class="restaurants__card--image">
+                            <div class="restaurants__card--new">
+                                <p>Nouveau</p>
+                            </div>
+                            <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="la palette du gout">
+                        </div>
+                    </div>
+                    <div class="restaurants__block">
+                        <div class="restaurants__block--info">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
 
     </main>
     

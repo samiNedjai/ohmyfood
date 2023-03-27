@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
-* , 
+* {
+	  /* margin: 0; */
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}  
 ::after ,
 ::before {
     box-sizing: border-box;
@@ -17,12 +25,42 @@ body {
     font-family: "Roboto",sans-serif;
 }
 
-header {
+
+/* header {
     font-family: "shrikhand";
     position: relative;
     text-align: center;
     height: 63px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+} */
+a {
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+h1, h2 {
+    font-weight: 700;
+    font-size: 24px;
+}
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+p {
+    font-size: 16px;
+}
+
+/*  header */
+.logo {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 23px 0 0 ;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.logo img {
+    width: 162px;
+    height: auto;
 }
 main {
     display: flex;
@@ -41,12 +79,12 @@ main .location {
     background: var(--gray2-color);
     color:#353535;
 }
-main .location_icon {
+main .location__icon {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-main .location_city {
+main .location__city {
     font-weight: 500;
     margin-left: 13px;
 }
@@ -55,7 +93,7 @@ section.explorer {
     background: #f7f7f7;
     width: 100%;
 }
-.explorer_container {
+.explorer__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,19 +101,19 @@ section.explorer {
     width: 100%;
     padding: 50px 0;
 }
-.explorer_title {
+.explorer__title {
     text-align: center;
     max-width: 275px;
     margin: 0;
     font-weight: 700;
 }
-.explorer_text{
+.explorer__text{
     text-align: center;
     width: 315px;
     font-weight: 300;
     font-size: 18px;
 }
-.explorer Button {
+.explorer button {
     border: none;
     opacity: 1;
     background: linear-gradient(to top, #9356DC -5.2%, #FF79DA 110.74%);
@@ -88,68 +126,145 @@ section.explorer {
     border-radius: 25px;
     /* padding: 0 18.5px; */
 }
-.explorer Button:hover {
+.explorer button:hover {
     opacity: 0.8;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 /* section Fonctionnement */
-.process_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 25px 0;
+.process__container {
+    padding: 48px 20px 70px;
     width: 100%;
     background: white;
 }
-.process {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    height:440px ;
-    /* max-width: 1200px; */
-    background-color: white;
-    gap: 20px;
+.fa-solid {
+  opacity: 0.8;
 }
-.process_title {
-    margin: 0;
-  }
-.process_step {
+
+  .process__steps {
     display: flex;
     align-items: center;
-    background: #f6f6f6;
-    height: 72px;
-    width: auto;
-    margin: 10px 20px;
-    border-radius: 20px;
-    position: relative;
+    margin-top: 25px;
+    /* transform: scale(1); */
+    transition:transform 0.3s ease-in-out 0.1s ;
+    
   }
-  .process_step:hover  {
+  .process__steps:hover {
+    transform: scale(1.05);
+    
+  }
+  .process__icon:hover  {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     opacity: 0.8;
     cursor: pointer;
     background:  #F5EDFF;
   }
-  
-  .process_number {
-    background-color:var(--Primaire-color);
-    color: white;
-    position: absolute;
-    padding: 3px 8px 3px 8px;
-    border-radius: 50px;
-    left: -10px;
+  .process__icon:hover .fa-solid {
+    color: #9356DC;
+    transition: none;
+    opacity: 1;
   }
   
-  .process_icon {
-    color: #7E7E7E;
-    margin: 0 20px;
-    padding-left: 20px;
+  .process__number {
+    padding: 5px;
+    width: 24px;
+    background: #9356DC;
+    height: 24px;
+    text-align: center;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 15px;
+    margin-right: 25px;
+    z-index: 2;
   }
   
-  .process_steps {
+  .process__icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 73px;
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 28px 0 28px 34px;
+    margin-left: -35px;
+    z-index: 1;
+  }
+  
+  /* .process__steps {
     display: flex;
     justify-content: center;
     flex-direction: column;
-  }
-  .process_text {
+  } */
+  .process__text {
     font-weight: 500;
+    padding-left: 27px;
   }
+  /*  Restaurants */
+  
+  .restaurants {
+    width: 100%;
+    margin: 0;
+    background: #f6f6f6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .restaurants__cards {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+   
+  }
+  .restaurants__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  .restaurants__card--image {
+    width: 100%;
+  }
+  
+  .restaurants__card--image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+  }
+  .restaurants__card--new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: #99E2D0;
+    width: 80px;
+    height: 30px;
+    top: 20px;
+    right: 20px;
+  }
+  .restaurant__card--new p{
+    color: #1b6150;
+    padding: 10px 20px;
+    margin: 0; 
+  }
+  .restaurants__block {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    background: white;
+    border-radius: 0 0 20px 20px;
+  }
+  .restaurants__block--info {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  margin-left: 20px;
+}
