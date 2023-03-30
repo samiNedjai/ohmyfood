@@ -4,7 +4,7 @@
 
 /*  Général */
 * {
-    margin: 0;
+  margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -76,4 +76,190 @@ header {
     color: #000;
     transition: none;
     opacity: 1;
+}
+/* main */
+main {
+    background-color: #FFFF;
+}
+
+.menu {
+    background-color: #F7F7F7;
+    padding-bottom: 40px;
+}
+div img {
+    width: 100%;
+    height: 275px;
+    object-fit: cover;
+    z-index: 0;
+}
+.menu__header {
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+    margin-top: -50px;
+    padding: 30px 13px 40px;
+    background-color: #F7F7F7;  
+    z-index: 1;
+    position: relative;
+}
+.menu__header--tilte {
+    margin-top: 20px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 25px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__header--tilte h1 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+i.icon-regular {
+    margin-right: -28px;
+}
+
+i.icon-solid:hover { 
+    background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;     
+    opacity: 1;
+    line-height: 1;  
+    cursor: pointer;
+    transition: opacity 0.8s ease-in 0.3s;
+}
+
+i.icon-solid:not(:hover) {
+    background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    line-height: 1;     
+    transition: opacity 0.8s ease-in 0.3s;
+    opacity: 0;
+}
+
+/* les carte d'entrées */
+.menu__cards{
+    margin: 40px 13px;
+    animation: transition 1.5s ease-out 0.5s forwards;
+    /* opacity: 0; */
+}
+
+/* keyframes*/
+
+@keyframes transition {
+    0% { 
+    opacity: 0;
+    margin-left: -20px;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% { 
+     opacity: 1;
+     margin-left: 13px;
+    }
+}
+.cards__title {
+    font-weight: 300;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+.cards__title::after {
+    content: '';
+    display:block;
+    width: 40px;
+    height: 3px;
+    background: #99E2D0;
+    margin-top: 10px;
+}
+.card {
+    width: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+    overflow: hidden;
+}
+.card:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.card__dish{
+    display: flex;
+    overflow: hidden;
+}
+.container_card {
+    padding: 12px 18px 12px 10px;
+    width: 100%;
+}
+.card__dish .dish--name {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.container_card h3 {
+    font-weight: 500;
+}
+
+text {
+    margin-top: 12px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.card__price {
+    display: flex;
+    gap: 10px;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #353535;
+}
+.check {
+    width: 60px;
+    background-color: #99E2D0;
+    height: 69px;
+    border-radius: 0px 15px 15px 0px;
+    display:flex;
+    align-items: center;
+    font-size: 31px;
+    padding-left: 15px;
+}
+i.fa-circle-check {
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    color: #99E2D0;
+}
+.card .card__price {
+    margin-right: -60px;
+}
+.card:hover .card__price {
+    transform: translateX(-60px);
+    transition: transform 0.8s ease-in; 
+}
+
+.card:not(:hover) .card__price {
+    transform: translateX(0);
+    transition: transform 0.8s ease-in; 
 }
