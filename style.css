@@ -206,6 +206,7 @@ section.explorer {
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+    margin: 55px 20px 65px;
   }
 
   .restaurants__cards {
@@ -303,7 +304,24 @@ i.fa-solid:hover{
 
 /* *****footer *****/
 footer {
+width: 100%;
 background: #353535;
 color: white;
 padding:22px 25px 35px ;
+}
+.footer__container {
+  margin-top: 16px;
+}
+footer a {
+  color: white;
+  padding-bottom: 7px;
+ 
+}
+.footer__détail {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.fa-utensils {
+  margin-right: 5px;
 }
