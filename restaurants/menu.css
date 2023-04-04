@@ -86,7 +86,7 @@ main {
     background-color: #F7F7F7;
     padding-bottom: 40px;
 }
-div img {
+.menu__img{
     width: 100%;
     height: 275px;
     object-fit: cover;
@@ -263,3 +263,28 @@ i.fa-circle-check {
     transform: translateX(0);
     transition: transform 0.8s ease-in; 
 }
+
+
+/* *****footer *****/
+footer {
+    width: 100%;
+    background: #353535;
+    color: white;
+    padding:22px 25px 35px ;
+    }
+    .footer__container {
+      margin-top: 16px;
+    }
+    footer a {
+      color: white;
+      padding-bottom: 7px;
+     
+    }
+    .footer__détail {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+    }
+    .fa-utensils {
+      margin-right: 5px;
+    }

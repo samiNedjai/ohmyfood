@@ -49,6 +49,13 @@ h3 {
 p {
     font-size: 16px;
 }
+/* loader */
+.chargement {
+  border: 10px solid #f3f3f3;
+  width: 100px;
+  height: 100px;
+}
+
 
 /*  header */
 .header__logo {
@@ -151,7 +158,6 @@ section.explorer {
     display: flex;
     align-items: center;
     margin-top: 25px;
-    /* transform: scale(1); */
     transition:transform 0.3s ease-in-out 0.1s ;
     
   }
