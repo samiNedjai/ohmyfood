@@ -150,6 +150,16 @@ i.icon-solid:not(:hover) {
     animation: transition 1.5s ease-out 0.5s forwards;
     opacity: 0;
 }
+.transition2 {
+    animation: transition 1.5s ease-out 1.5s forwards;
+    opacity: 0;
+}
+
+.transition3 {
+    animation: transition 1.5s ease-out 2.5s forwards;
+    opacity: 0;
+}
+
 
 /* keyframes*/
 
@@ -263,7 +273,32 @@ i.fa-circle-check {
     transform: translateX(0);
     transition: transform 0.8s ease-in; 
 }
+.button__command {
+    display: block;
+    border: none;
+    opacity: 1;
+    background: linear-gradient(to top, #9356DC -5.2%, #FF79DA 110.74%);
+    color: white;
+    height: 50px;
+    font-weight: 500;
+    font-size:16px ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    padding: 13px 40px;
+    margin-top: 40px;
+    margin: 0 auto;
+}
+.button__command:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.35);
+    cursor: pointer;
+    filter: brightness(1.1);
+    transition: all 0.3s ease-in-out 0.3s;
+}
 
+.button__command:not(:hover) {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.3s;
+}
 
 /* *****footer *****/
 footer {
