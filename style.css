@@ -151,7 +151,7 @@ section.explorer {
     background: white;
 }
 .fa-solid {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
   .process__steps {
@@ -223,7 +223,6 @@ section.explorer {
   .restaurants__cards {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    /* grid-template-columns: 1fr; */
     grid-gap: 20px;
     width: 95%;
     margin-top: 20px;
@@ -335,4 +334,96 @@ footer a {
 }
 .fa-utensils {
   margin-right: 5px;
+}
+/*Media Queries Tablette*/ 
+
+@media screen and (min-width:768px) and (max-width: 1023px) {
+  .explorer__title {
+    font-size: 30px;
+    max-width:100% ;
+  }
+  .explorer__text{
+    width: 100%;
+  }
+  .process {
+    display: flex;
+    gap: 20px;
+  }
+  .process__text {
+    padding-right: 15px;
+  }
+  .restaurants {
+    margin: 55px 20px 65px;
+  }
+  .restaurants__cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+    grid-template-rows: repeat(2, auto); /* 2 lignes de hauteur automatique */
+    gap: 30px; /* espacement entre les éléments */
+    margin-left: 5px;
+  }
+  .footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%
+  }
+  }
+  /*Media Queries desktop*/
+@media screen and (min-width:1024px) {
+  .explorer__title {
+    font-size: 40px;
+    max-width:100% ;
+  }
+  .explorer__text {
+    font-size: 18px;
+    font-weight: 300;
+    width: 100%;
+  }
+  .process__container {
+    padding: 50px 140px 80px;
+
+  }
+  .process {
+    display: flex;
+    align-items: center;
+    gap: 37px;
+  }
+  .process__steps {
+    width: 100%;
+    margin-top: 28px;
+  }
+  .process__text {
+    padding-right: 38px;
+  }
+  .restaurants {
+    padding: 55px 140px 65px; 
+    margin: 0;
+  }
+  .restaurants__cards{
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
+    grid-template-rows: repeat(2, auto); /* 2 lignes de hauteur automatique */
+    row-gap: 55px;
+    column-gap: 90px; /* espacement entre les éléments */
+    padding-top: 28px;
+  }
+  .restaurants__block--info p {
+    font-size: 17px;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 130px;
+    gap: 20px;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.footer__icon {
+  display: flex;
+  margin-top: 12px;
+  padding-left: 70px;
+  }
 }
