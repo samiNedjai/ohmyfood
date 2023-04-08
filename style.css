@@ -193,8 +193,14 @@ section.explorer {
     /* padding: 0 18.5px; */
 }
 .explorer button:hover {
-    opacity: 0.8;
+    cursor: pointer;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+    filter: brightness(1.2);
+    transition: all 0.3s ease-in-out 0.3s;
+}
+
+.explorer button:not(:hover) {
+  transition: all 0.3s ease-in-out 0.3s;
 }
 /* section Fonctionnement */
 
