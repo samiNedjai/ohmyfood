@@ -403,7 +403,7 @@ footer a {
     grid-template-columns: repeat(2, 1fr); /* 2 colonnes de largeur égale */
     grid-template-rows: repeat(2, auto); /* 2 lignes de hauteur automatique */
     row-gap: 55px;
-    column-gap: 90px; /* espacement entre les éléments */
+    column-gap: 90px; 
     padding-top: 28px;
   }
   .restaurants__block--info p {
