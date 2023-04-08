@@ -50,11 +50,60 @@ p {
     font-size: 16px;
 }
 /* loader */
+.loader {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #eed1e1;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation: loader 2.5s linear forwards ;
+
+}
 .chargement {
   border: 10px solid #f3f3f3;
+  border-top:10px solid var(--Primaire-color) ;
+  border-bottom:10px solid var(--Tertiaire-color) ;
+  border-left:10px solid var(--Secondaire-color) ;
+  border-radius: 50%;
   width: 100px;
   height: 100px;
+  animation: spin 2.5s linear forwards ;
+  margin: auto;
+  position:absolute;
 }
+/* annimation du loader */
+@keyframes loader {
+  0% {
+      opacity: 1;
+  }
+
+  85% {
+      opacity: 0.5;
+  }
+
+  100% { 
+      z-index: -1;
+      opacity: 0;
+  }
+
+  0%, 25%, 50%, 95% {
+      z-index: 1;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+
+    }
+  }
+
 
 
 /*  header */
@@ -62,8 +111,11 @@ p {
     display: flex;
     justify-content: center;
     background-color: white;
-    margin: 23px 0 0 ;
+    /* margin: 23px 0 0 ; */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+.header__logo a {
+  margin: 23px 0 15px;
 }
 .header__logo img {
     width: 162px;
@@ -145,6 +197,7 @@ section.explorer {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 /* section Fonctionnement */
+
 .process__container {
     padding: 48px 20px 70px;
     width: 100%;
@@ -158,6 +211,7 @@ section.explorer {
     display: flex;
     align-items: center;
     margin-top: 25px;
+    transform: scale(1);
     transition:transform 0.3s ease-in-out 0.1s ;
     
   }
@@ -338,6 +392,11 @@ footer a {
 /*Media Queries Tablette*/ 
 
 @media screen and (min-width:768px) and (max-width: 1023px) {
+  .header__logo img {
+    width: 200px;
+    height: auto;
+  }
+
   .explorer__title {
     font-size: 30px;
     max-width:100% ;
@@ -370,6 +429,11 @@ footer a {
   }
   /*Media Queries desktop*/
 @media screen and (min-width:1024px) {
+  .header__logo img {
+    width: 200px;
+    height: auto;
+  }
+
   .explorer__title {
     font-size: 40px;
     max-width:100% ;
