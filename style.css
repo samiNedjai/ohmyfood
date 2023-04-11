@@ -65,9 +65,9 @@ p {
 }
 .chargement {
   border: 10px solid #f3f3f3;
-  border-top:10px solid var(--Primaire-color) ;
-  border-bottom:10px solid var(--Tertiaire-color) ;
-  border-left:10px solid var(--Secondaire-color) ;
+  border-top: 10px solid var(--Primaire-color) ;
+  border-bottom: 10px solid var(--Tertiaire-color) ;
+  border-left: 10px solid var(--Secondaire-color) ;
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -127,7 +127,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: O;
+    margin:0;
     padding: 0;
 }
 /* localisation */
