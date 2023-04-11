@@ -353,25 +353,51 @@ section.explorer {
 
 i.fa-regular {
   line-height: 1;
-  margin-right: -24px;
+  color: black;
+  /* background-color: transparent; */
 }
 
-.icons i.fa-solid {
+/* .icons i.fa-solid {
   color: transparent;
   line-height: 1;
   transition: opacity 1s ease-in;
   opacity: 0;
+} */
+
+i.fa-regular:hover{
+  font-weight:900;
+  color: transparent;
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%); 
+  background-clip:text;
+  -webkit-background-clip:text;
+  /* transition: opacity 0.8s ease-in 0.3s; */
+  animation: coeur 2.5s linear forwards ;
 }
-
-i.fa-solid:hover{
-  background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  z-index: 1;
-  opacity: 1;   
+i.fa-regular:not(:hover){
+  background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%); 
+  background-clip:text;
+  -webkit-background-clip:text;
+  line-height: 1; 
+  transition: opacity 0.8s ease-in-out 0.3s;
 }
-
-
+@keyframes coeur {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+  
+  }
 /* *****footer *****/
 footer {
 width: 100%;
