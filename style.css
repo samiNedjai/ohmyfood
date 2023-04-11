@@ -350,12 +350,37 @@ section.explorer {
   align-items: center;
   padding-right: 25px;
 }
+.icons-regular {
+  margin-right: -24px;
+}
 
-i.fa-regular {
+i.icons-solid:hover { 
+  background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;     
+  opacity: 1;
+  line-height: 1;  
+  cursor: pointer;
+  transition: opacity 0.8s ease-in 0.3s;
+}
+
+i.icons-solid:not(:hover) {
+  background-image:linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  line-height: 1;     
+  transition: opacity 0.8s ease-in 0.3s;
+  opacity: 0;
+}
+
+/* i.fa-regular {
   line-height: 1;
   color: black;
-  /* background-color: transparent; */
-}
+  /* background-color: transparent; 
+}*/
+
 
 /* .icons i.fa-solid {
   color: transparent;
@@ -364,13 +389,12 @@ i.fa-regular {
   opacity: 0;
 } */
 
-i.fa-regular:hover{
+/* i.fa-regular:hover{
   font-weight:900;
   color: transparent;
   background-image: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%); 
   background-clip:text;
   -webkit-background-clip:text;
-  /* transition: opacity 0.8s ease-in 0.3s; */
   animation: coeur 2.5s linear forwards ;
 }
 i.fa-regular:not(:hover){
@@ -397,7 +421,7 @@ i.fa-regular:not(:hover){
     opacity: 1;
   }
   
-  }
+  } */
 /* *****footer *****/
 footer {
 width: 100%;
