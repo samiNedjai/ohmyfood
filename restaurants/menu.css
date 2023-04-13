@@ -284,7 +284,7 @@ i.fa-circle-check {
     font-size:16px ;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
-    padding: 13px 40px;
+    padding: 13px 30px;
     margin-top: 40px;
     margin: 0 auto;
 }
@@ -389,7 +389,7 @@ footer {
         height: auto;
     }
     .menu {
-        margin: 0 110px;
+        margin: 0 120px;
     }
     .menu__header--tilte {
         justify-content: center;
@@ -398,7 +398,7 @@ footer {
     }
     .menu__cards {
         margin: 0;
-        padding: 40px 60px 0;
+        padding: 40px 120px 0;
     }
      /* keyframes*/
 
