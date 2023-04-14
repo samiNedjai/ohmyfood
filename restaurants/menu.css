@@ -192,69 +192,55 @@ i.icon-solid:not(:hover) {
     background: #99E2D0;
     margin-top: 10px;
 }
+
+/* *********************************** */
 .card {
-    width: 100%;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    height:69px;
+    background: white;
     border-radius: 15px;
-    margin-bottom: 12px;
     display: flex;
-    justify-content: space-between;
-    gap: 55px;
     overflow: hidden;
-}
-.card:hover {
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
 }
 .card__dish{
-    display: flex;
+    padding: 12px 0 12px 12px;
+    overflow: hidden;
 }
-.container_card {
-    padding: 12px 18px 12px 10px;
-    width: 100%;
-}
-.card__dish, 
-.dish--name ,
-.dish--text {
+.card__dish h3 {
+    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    padding-bottom: 8px;
+}
+.card__dish p {
     overflow: hidden;
-    
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
-
-.container_card h3 {
-    font-weight: 500;
-}
-text {
-    margin-top: 12px;
-    font-size: 15px;
-    font-weight: 300;
-}
-.card__price {
+.card span {
     display: flex;
-    gap: 10px;
-}
-.price {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 12px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #353535;
+    align-items: flex-end;
+    margin-left: auto;
+    padding: 16px 16px 8px 0;
 }
 .check {
-    width: 60px;
-    background-color: #99E2D0;
-    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #99E2D0;
     border-radius: 0px 15px 15px 0px;
+    width: 60px;
+    margin-right: -60px;
+    transition: all 0.6s ease-in-out;
+}
+.check i {
+    color: #99E2D0;
+    background: white;
+    border-radius: 50%;
     display:flex;
     align-items: center;
     font-size: 31px;
-    padding-left: 15px;
 }
 i.fa-circle-check {
     background-color: #fff;
@@ -263,18 +249,10 @@ i.fa-circle-check {
     border-radius: 20px;
     color: #99E2D0;
 }
-.card .card__price {
-    margin-right: -60px;
+.card:hover .check {
+    margin-right: 0;
 }
-.card:hover .card__price {
 
-    transform: translateX(-59px);
-    transition: transform 0.8s ease-in; 
-}
-.card:not(:hover) .card__price {
-    transform: translateX(0);
-    transition: transform 0.8s ease-in; 
-}
 .button__command {
     display: block;
     border: none;
