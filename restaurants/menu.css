@@ -37,7 +37,7 @@ h1, h2 {
     font-size: 24px;
 }
 h3 {
-    font-weight: 700;
+    font-weight: 500;
     font-size: 18px;
 }
 p {
@@ -189,7 +189,7 @@ i.icon-solid:not(:hover) {
     display:block;
     width: 40px;
     height: 3px;
-    background: #99E2D0;
+    background: var(--Tertiaire-color);
     margin-top: 10px;
 }
 
@@ -223,35 +223,35 @@ i.icon-solid:not(:hover) {
     align-items: flex-end;
     margin-left: auto;
     padding: 16px 16px 8px 0;
+    font-weight: 700;
+    font-size: 15px;
 }
 .check {
+    width: 60px;
+    background-color: var(--Tertiaire-color);
+    height: 69px;
+    border-radius: 0px 15px 15px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #99E2D0;
-    border-radius: 0px 15px 15px 0px;
-    width: 60px;
+    font-size: 31px;
+    padding-right: 15px;
     margin-right: -60px;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.8s ease-in-out;
 }
-.check i {
-    color: #99E2D0;
+.fa-circle-check {
+    color:var(--Tertiaire-color);
     background: white;
     border-radius: 50%;
-    display:flex;
-    align-items: center;
-    font-size: 31px;
-}
-i.fa-circle-check {
-    background-color: #fff;
     width: 30px;
     height: 30px;
-    border-radius: 20px;
-    color: #99E2D0;
+    margin-left: 20px;
 }
+
 .card:hover .check {
     margin-right: 0;
 }
+/* button command */
 
 .button__command {
     display: block;
